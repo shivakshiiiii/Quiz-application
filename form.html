@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(244, 212, 249);}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 8px solid #ccc;
+  border-radius: 14px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:purple;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3c47e4;
+}
+
+.container {
+  width: 50%;
+  /*display: flex;
+  justify-content: center;*/
+  margin-left: 400px;
+  border-radius: 20px;
+  background-color: rgb(226, 173, 250);
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <h2 style="text-align: center;">QUIZ REGISTERATION FORM</h2>
+  <form action="index.html">
+    <b><label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="Rno">Roll No.</label>
+    <input type="text" id="Rno" name="Rno" placeholder="Your roll no.">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="india">INDIA</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    
+    <label for="Pno">Phone Number</label>
+    <input type="text" id="Pno" name="Pno" placeholder="Your Phone No.">
+
+    <label for="subject">Address</label>
+    <textarea id="subject" name="subject" placeholder="Write Address.." style="height:50px"></textarea>
+
+    <input type="submit" value="Submit"></b>
+  </form>
+</div>
+
+</body>
+</html>
